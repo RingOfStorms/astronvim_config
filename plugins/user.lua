@@ -9,4 +9,13 @@ return {
   --     require("lsp_signature").setup()
   --   end,
   -- },
+  {
+    "Pocco81/auto-save.nvim",
+    event = "BufEnter",
+    config = function()
+      require("auto-save").setup {
+        -- config
+      }
+    end
+  }
 }
