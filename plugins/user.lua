@@ -16,6 +16,10 @@ return {
       require("auto-save").setup {
         -- config
       }
-    end
-  }
+    end,
+  },
+  {
+    "Almo7aya/openingh.nvim",
+    event = "BufEnter",
+  },
 }
