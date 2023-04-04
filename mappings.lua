@@ -3,6 +3,7 @@ return {
     ["<C-d>"] = { "<C-d>zz", desc = "Vertical half page down and center cursor" },
     ["<C-u>"] = { "<C-u>zz", desc = "Vertical half page up and center cursor" },
     ["<leader>gf"] = { ":OpenInGHFile <CR>", desc = "Open in github" },
+    ["<leader>mp"] = { ":Glow <CR>", desc = "Markdown preview" }
   },
   v = {
     ["<leader>gf"] = { ":OpenInGHFile <CR>", desc = "Open in github" },

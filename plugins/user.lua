@@ -22,11 +22,6 @@ return {
   {
     "Pocco81/auto-save.nvim",
     event = "BufEnter",
-    config = function()
-      require("auto-save").setup {
-        -- config
-      }
-    end,
   },
   {
     "Almo7aya/openingh.nvim",
@@ -36,6 +31,14 @@ return {
     "gioele/vim-autoswap",
     event = "BufEnter",
   },
+  {
+    "lnc3l0t/glow.nvim",
+    branch = "advanced_window",
+    config = {
+      default_type = "keep"
+    },
+    cmd = "Glow"
+  }
   -- {
   --   "simrat39/inlay-hints.nvim",
   -- },
