@@ -38,7 +38,7 @@ return {
       default_type = "keep"
     },
     cmd = "Glow"
-  }
+  },
   -- {
   --   "simrat39/inlay-hints.nvim",
   -- },
