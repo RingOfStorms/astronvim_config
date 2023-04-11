@@ -1,5 +1,5 @@
 local scratch = function(extension)
-  os.execute('mkdir -p ~/dev/scratches/')
+  os.execute "mkdir -p ~/dev/scratches/"
   local date = os.date "%Y-%m-%dT%H:%M:%S"
   local filepath = "~/dev/scratches/scratch_" .. date .. extension
   vim.cmd("execute 'edit " .. filepath .. "'")
@@ -25,20 +25,46 @@ return {
     ["<leader>s"] = { name = " Scratch File" },
     ["<leader>ss"] = { function() scratch ".txt" end, desc = "New text scratch file" },
     ["<leader>sn"] = { function() scratch ".json" end, desc = "New json scratch file" },
-    ["<leader>ss"] = { function() scratch ".sql" end, desc = "New sql scratch file" },
+    ["<leader>sq"] = { function() scratch ".sql" end, desc = "New sql scratch file" },
     ["<leader>st"] = { function() scratch ".ts" end, desc = "New ts scratch file" },
     ["<leader>sb"] = { function() scratch ".sh" end, desc = "New shell scratch file" },
     ["<leader>sj"] = { function() scratch ".js" end, desc = "New js scratch file" },
+    ["∆"] = {
+      "<Esc>:m .+1<CR>==g",
+      desc = "Move the line up",
+    },
+    ["˚"] = {
+      "<Esc>:m .-2<CR>==g",
+      desc = "Move the line down",
+    },
   },
   v = {
     ["<leader>gf"] = { ":OpenInGHFile <CR>", desc = "Open in github" },
     ["y"] = { '"*y', desc = "Copy to system clipboard" },
     ["p"] = { '"*p', desc = "Paste from system clipboard" },
+    ["∆"] = {
+      cmd = ":m '>+1<CR>gv=gv",
+      desc = "Move the selected text up",
+    },
+    ["˚"] = {
+      cmd = ":m '<-2<CR>gv=gv",
+      desc = "Move the selected text down",
+    },
+  },
+  x = {
+    ["∆"] = {
+      cmd = ":m '>+1<CR>gv=gv",
+      desc = "Move the selected text up",
+    },
+    ["˚"] = {
+      desc = "Move the selected text down",
+      cmd = ":m '<-2<CR>gv=gv",
+    },
   },
   i = {
-    ["<C-h>"] = { "<Left>", desc = "Left" },
-    ["<C-j>"] = { "<Down>", desc = "Down" },
     ["<C-k>"] = { "<Up>", desc = "Up" },
+    ["<C-j>"] = { "<Down>", desc = "Down" },
+    ["<C-h>"] = { "<Left>", desc = "Left" },
     ["<C-l>"] = { "<Right>", desc = "Right" },
   },
   c = {

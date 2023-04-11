@@ -39,8 +39,4 @@ return {
     },
     cmd = "Glow"
   },
-  -- {
-  --   "simrat39/inlay-hints.nvim",
-  -- },
-  -- This is not working so disabling for now...
 }
