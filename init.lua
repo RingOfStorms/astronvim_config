@@ -1,3 +1,10 @@
+vim.cmd([[
+  augroup FileType_http
+    au!
+    au BufNewFile,BufRead *.http setfiletype http
+  augroup END
+]])
+
 return {
   colorscheme = "material",
   lsp = {

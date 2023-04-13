@@ -1,4 +1,4 @@
 return {
   "Almo7aya/openingh.nvim",
-  event = "BufEnter",
+  event = "User AstroFile",
 }

@@ -37,6 +37,8 @@ return {
       "<Esc>:m .-2<CR>==g",
       desc = "Move the line down",
     },
+    ["<leader>r"] = { function() require("rest-nvim").run() end, desc = "Send http request" },
+    ["<leader>Q"] = { ":qa<CR>" ,desc = "Quit all"}
   },
   v = {
     ["<leader>gf"] = { ":OpenInGHFile <CR>", desc = "Open in github" },

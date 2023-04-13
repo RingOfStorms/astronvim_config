@@ -1,4 +1,4 @@
 return {
   "Pocco81/auto-save.nvim",
-  event = "BufEnter",
+  event = "User AstroFile",
 }
