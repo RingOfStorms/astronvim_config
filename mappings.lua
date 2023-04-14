@@ -38,7 +38,14 @@ return {
       desc = "Move the line down",
     },
     ["<leader>r"] = { function() require("rest-nvim").run() end, desc = "Send http request" },
-    ["<leader>Q"] = { ":qa<CR>" ,desc = "Quit all"}
+    ["<leader>Q"] = { ":qa<CR>", desc = "Quit all" },
+    ["<leader>,"] = { name = " Misc Tools" },
+    ["<leader>,c"] = { name = " Casing" },
+    ["<leader>,cs"] = { ":Snek<CR>", desc = "To Snek Case" },
+    ["<leader>,cc"] = { ":Camel<CR>", desc = "To Camel Case" },
+    ["<leader>,cp"] = { ":CamelB<CR>", desc = "To Pascal Case" },
+    ["<leader>,ck"] = { ":Kebab<CR>", desc = "To Kebab Case" },
+    ["<leader>,ce"] = { ":Screm<CR>", desc = "To Screm Case" },
   },
   v = {
     ["<leader>gf"] = { ":OpenInGHFile <CR>", desc = "Open in github" },
@@ -52,6 +59,13 @@ return {
       cmd = ":m '<-2<CR>gv=gv",
       desc = "Move the selected text down",
     },
+    ["<leader>,"] = { name = " Misc Tools" },
+    ["<leader>,c"] = { name = " Casing" },
+    ["<leader>,cs"] = { ":Snek<CR>", desc = "To Snek Case" },
+    ["<leader>,cc"] = { ":Camel<CR>", desc = "To Camel Case" },
+    ["<leader>,cp"] = { ":CamelB<CR>", desc = "To Pascal Case" },
+    ["<leader>,ck"] = { ":Kebab<CR>", desc = "To Kebab Case" },
+    ["<leader>,ce"] = { ":Screm<CR>", desc = "To Screm Case" },
   },
   x = {
     ["∆"] = {
