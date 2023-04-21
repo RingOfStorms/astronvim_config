@@ -1,5 +1,7 @@
 return {
   "nvim-neo-tree/neo-tree.nvim",
+  pin = true,
+  tag = '2.56',
   opts = {
     filesystem = {
       follow_current_file = true,
