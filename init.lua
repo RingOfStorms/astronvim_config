@@ -1,9 +1,16 @@
-vim.cmd([[
+vim.cmd [[
   augroup FileType_http
     au!
     au BufNewFile,BufRead *.http setfiletype http
   augroup END
-]])
+
+  autocmd BufRead,BufNewFile *.ts,*.tsx,*.py,*.js,*.jsx,*.css,*.scss,*.rs,*.lua,*.html setlocal spell spelllang=en_us wrap
+
+  " autocmd BufRead,BufNewFile * setlocal spell spelllang=en_us wrap
+
+  set spellfile=~/.config/nvim/lua/user/en.utf-8.add
+
+]]
 
 return {
   colorscheme = "material",

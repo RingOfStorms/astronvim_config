@@ -1,0 +1,10 @@
+config
+nvim
+lua
+utf
+autocmd
+set
+spellfile
+lodash
+metadataSemver
+util
