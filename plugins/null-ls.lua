@@ -1,8 +1,7 @@
 -- npm install -g cspell@latest
 
 local output = vim.fn.system {
-  "command",
-  "-v",
+  "which",
   "cspell",
 }
 if output == nil or output == "" then
