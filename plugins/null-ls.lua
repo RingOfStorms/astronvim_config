@@ -1,23 +1,19 @@
 -- npm install -g cspell@latest
 
-
-
-local output = vim.fn.system({
+local output = vim.fn.system {
   "command",
   "-v",
-  "cspell"
-})
+  "cspell",
+}
 if output == nil or output == "" then
--- if v:shell_error != 0 then
-  vim.fn.system({
+  -- if v:shell_error != 0 then
+  vim.fn.system {
     "npm",
     "install",
     "-g",
-    "cspell@latest"
-  })
-
+    "cspell@latest",
+  }
 end
-
 
 return {
   "jose-elias-alvarez/null-ls.nvim",
@@ -33,11 +29,20 @@ return {
       null_ls.builtins.formatting.stylua,
       null_ls.builtins.formatting.prettier,
       null_ls.builtins.formatting.rustfmt,
-      null_ls.builtins.diagnostics.cspell,
-      null_ls.builtins.code_actions.cspell,
+      null_ls.builtins.code_actions.gitsigns,
+      -- null_ls.builtins.code_actions.proselint, -- TODO looks interesting
+      null_ls.builtins.code_actions.cspell.with {
+        config = {
+          find_json = function() return vim.fn.findfile("cspell.json", vim.fn.environ().HOME .. "/.config/nvim/lua/user/;") end,
+        },
+      },
+      null_ls.builtins.diagnostics.cspell.with {
+        extra_args = { "--config", "~/.config/nvim/lua/user/cspell.json" },
+      },
     }
 
-    config.update_in_insert = true;
+    config.update_in_insert = true
+
     return config -- return final config table
   end,
 }
