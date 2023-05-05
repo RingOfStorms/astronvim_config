@@ -2,7 +2,7 @@ return {
   {
     "williamboman/mason-lspconfig.nvim",
     opts = {
-      ensure_installed = { "lua_ls", "rust_analyzer", "tsserver", "pyright" },
+      ensure_installed = { "lua_ls", "rust_analyzer", "tsserver", "pyright", "cssls", "cssmodules_ls" },
     },
   },
   {
