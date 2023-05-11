@@ -50,6 +50,7 @@ return {
     ["<leader>,jr"] = { function() require("jester").run() end, desc = "Run test under cursor" },
     ["<leader>,jf"] = { function() require("jester").run_file() end, desc = "Run tests for file" },
     ["<leader>,jl"] = { function() require("jester").run_last() end, desc = "Run last ran test" },
+    ["<leader>lz"] = { ":LspRestart<CR>", desc = "Restart LSP Server" },
   },
   v = {
     ["<leader>gf"] = { ":OpenInGHFile <CR>", desc = "Open in github" },
