@@ -6,7 +6,7 @@ vim.cmd [[
 
   " autocmd BufRead,BufNewFile *.ts,*.tsx,*.py,*.js,*.jsx,*.css,*.scss,*.rs,*.lua,*.html setlocal spell spelllang=en_us wrap
   " autocmd BufRead,BufNewFile * setlocal spell spelllang=en_us wrap
-  autocmd BufRead,BufNewFile *.ts,*.tsx,*.py,*.js,*.jsx,*.css,*.scss,*.rs,*.lua,*.html setlocal wrap
+  autocmd BufRead,BufNewFile *.ts,*.tsx,*.py,*.js,*.jsx,*.css,*.scss,*.rs,*.lua,*.html,*.json setlocal wrap
 
 
   set spellfile=~/.config/nvim/lua/user/en.utf-8.add
