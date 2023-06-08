@@ -7,6 +7,7 @@ end
 
 return {
   n = {
+    ["<leader>a"] = {"ggVG"},
     ["<C-d>"] = { "<C-d>zz", desc = "Vertical half page down and center cursor" },
     ["<C-u>"] = { "<C-u>zz", desc = "Vertical half page up and center cursor" },
     ["<leader>gf"] = { ":OpenInGHFile <CR>", desc = "Open in github" },
@@ -71,6 +72,8 @@ return {
     ["<leader>,cp"] = { ":CamelB<CR>", desc = "To Pascal Case" },
     ["<leader>,ck"] = { ":Kebab<CR>", desc = "To Kebab Case" },
     ["<leader>,ce"] = { ":Screm<CR>", desc = "To Screm Case" },
+    ["<C-R>"] = { '"hy:%s/<C-r>h//gc<left><left><left>', desc = "Replace current selection with confirmations" },
+    ["<C-r>"] = { '"hy:%s/<C-r>h//g<left><left>', desc = "Replace current selection", },
   },
   x = {
     ["∆"] = {
