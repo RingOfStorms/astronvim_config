@@ -7,6 +7,7 @@ end
 
 return {
   n = {
+    [";"] = { ":", desc = "Fast ;command mode"},
     ["<leader>a"] = {"ggVG"},
     ["<C-d>"] = { "<C-d>zz", desc = "Vertical half page down and center cursor" },
     ["<C-u>"] = { "<C-u>zz", desc = "Vertical half page up and center cursor" },
