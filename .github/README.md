@@ -1,3 +1,8 @@
+# No Longer Udpated
+I've since made a config from scratch not using AstroNvim: https://github.com/RingOfStorms/nvim
+
+Astronvim simply was a bit too much for what I needed in my personal setup. I still recommend it as the very first config to try since it works quite well and has defaults similar to most graphical editors if that is where you are coming from. Once you use vim more it gets obvious the pros of making your own config and having only the things you need installed.
+
 # AstroNvim User Configuration Example
 
 A user configuration template for [AstroNvim](https://github.com/AstroNvim/AstroNvim)
